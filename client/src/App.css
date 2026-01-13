@@ -15,3 +15,26 @@
   color: white;
   text-align: center;
 }
+
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 16px;
+  }
+
+  .App-header h1 {
+    font-size: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .App-header {
+    padding: 14px;
+  }
+
+  .App-header h1 {
+    font-size: 24px;
+  }
+}

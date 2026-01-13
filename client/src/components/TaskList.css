@@ -117,3 +117,104 @@
     text-decoration: line-through;
     color: #666;
   }
+
+
+/* Tablet and below */
+@media (max-width: 768px) {
+    .task-list-container {
+      margin: 20px auto;
+      padding: 0 16px;
+    }
+  
+    .task-list-container h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  
+    .task-list {
+      padding: 16px;
+      border-radius: 6px;
+    }
+  
+    .task-item {
+      padding: 14px;
+      margin-bottom: 10px;
+    }
+  
+    .task-title {
+      font-size: 15px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    .task-list-container {
+      margin: 16px auto;
+      padding: 0 12px;
+    }
+  
+    .task-list-container h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+  
+    .task-list {
+      padding: 12px;
+      border-radius: 4px;
+    }
+  
+    .task-item {
+      padding: 12px;
+      margin-bottom: 8px;
+      border-left-width: 3px;
+    }
+  
+    .task-item:hover {
+      transform: translateX(2px);
+    }
+  
+    .task-header {
+      gap: 6px;
+    }
+  
+    .task-id {
+      font-size: 11px;
+    }
+  
+    .task-status {
+      padding: 3px 10px;
+      font-size: 11px;
+    }
+  
+    .task-title {
+      font-size: 14px;
+    }
+  
+    .loading,
+    .error,
+    .empty {
+      padding: 30px 15px;
+      font-size: 14px;
+    }
+  
+    .retry-button {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+  }
+  
+  /* Touch device optimizations */
+  @media (hover: none) and (pointer: coarse) {
+    .task-item:hover {
+      transform: none;
+    }
+  
+    .task-item:active {
+      transform: scale(0.98);
+    }
+  
+    .retry-button,
+    .task-item {
+      min-height: 44px;
+    }
+  }
