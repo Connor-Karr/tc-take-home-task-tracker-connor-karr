@@ -13,3 +13,29 @@ python app.py
 ```
 
 Server will run on http://localhost:8080
+
+## API Endpoints
+
+### GET /api/tasks
+Returns a list of all tasks.
+
+**Response:**
+```json
+{
+  "status": "success",
+  "data": [
+    {
+      "id": 1,
+      "title": "Complete project setup",
+      "status": "completed"
+    }
+  ],
+  "count": 5
+}
+```
+
+## Testing
+Test the API with curl:
+```bash
+curl http://localhost:8080/api/tasks
+```
