@@ -1,0 +1,17 @@
+.task-list-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .task-list-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .task-list {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
